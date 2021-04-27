@@ -1,4 +1,4 @@
-//Diagram adapted from Modulo, AY19/20 Sem 2
+//Diagram adapted from existing provided AB3 class diagram and Modulo, AY19/20 Sem 2
 
 @startuml
 !include style.puml
