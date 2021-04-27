@@ -1,5 +1,5 @@
 //@@author ming-00-reused
-//Referred to diagram flow from project Modulo in AY19/20 Sem 2
+//Referred to diagram flow from project Modulo in AY19/20 Sem 2's developer guide
 @startuml
 
 start
@@ -10,7 +10,7 @@ start
     :DeleteBookingCommandParser parses input;
         if () then ([is not empty])
             :Returns DeleteBookingCommand object;
-            if () then ([input is valid and booking index exists])
+            if () then ([booking index provided exists])
                 :Model deletes booking;
                 :Returns CommandResult to LogicManager;
                 :Saves changes to Storage;
@@ -24,7 +24,7 @@ start
         :Throws ParseException;
     endif
 
-:Returns feedback to user;
+:Displays result feedback to user;
 
 stop
 
